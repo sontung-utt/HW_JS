@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getData()">Kết quả</button>
+    <script>
+        //Bài nâng cao 2: Trong javascript cho hai biến a và b, và trong html cho một nút bấm 
+        ///=> viết chương chình khi bấm vào hiển thị ra a + b (document.write, alert, console.log)
+        var a = prompt("Nhập giá trị a: ", a);
+        var b = prompt("Nhập giá trị b: ", b);
+        let c = parseInt(a) + parseInt(b);
+        function getData() {
+            console.log("Tổng của 2 số vừa nhập là: " + c);
+            alert("Tổng của 2 số vừa nhập là: " + c);
+            document.write("Tổng của 2 số vừa nhập là: " + c);
+        }
+    </script>
+</body>
+
+</html>

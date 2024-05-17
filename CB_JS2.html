@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài cơ bản 2:Sử dụng prompt cho nhập vào 2 số và hiển thị ra tổng, tích, hiệu , thương của 2 số đó 
+        //(sử dụng document.write, alert, console.log)
+        var a = prompt("Nhập giá trị a: ", a);
+        var b = prompt("Nhập giá trị b: ", b);
+        let c = parseInt(a) + parseInt(b);
+        let d = a - b;
+        let e = a * b;
+        let g = a / b;
+        alert("Tổng của 2 số là: " + c + "\nHiệu của 2 số là: " + d + "\nTích của 2 số là: " + e + "\nThương của 2 số là: " + g);
+        console.log("Tổng của 2 số là: " + c + "\nHiệu của 2 số là: " + d + "\nTích của 2 số là: " + e + "\nThương của 2 số là: " + g);
+        document.write("Số a là: "+ a + "\n-\nSố b là: "+b+"<br>");
+        document.write("Tổng của 2 số là: " + c + "<br>Hiệu của 2 số là: " + d + "<br>Tích của 2 số là: " + e + "<br>Thương của 2 số là: " + g);
+    </script>
+</body>
+
+</html>
