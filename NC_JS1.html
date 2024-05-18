@@ -8,16 +8,20 @@
 </head>
 
 <body>
-    <input type="text" id="txt1" placeholder="Nhập giá trị">
+    <input type="text" id="txt1" placeholder="Nhập giá trị" onchange="getText(txt1)">
     <script>
+
         //Bài nâng cao 1: Trong HTML cho một ô input, khi người dùng thay đổi giá trị của ô input dó thì console,log ra giá trị đó.
-        document.addEventListener("DOMContentLoaded", (event) => {
+        function getText(input) {
+            console.log("Giá trị bạn vừa nhập là: "+input.value);
+        }
+        /*document.addEventListener("DOMContentLoaded", (event) => {
             let data = document.getElementById("txt1");
 
             data.addEventListener("input", (event) => {
                 console.log(event.target.value);
             });
-        });
+        });*/ //Nhập giá trị nào trên ô input ra luôn giá trị đó
     </script>
 </body>
 
