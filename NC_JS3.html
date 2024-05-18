@@ -9,19 +9,21 @@
 
 <body>
     <input type="text" id="num1" placeholder="Nhập giá trị thứ nhất"><br><br>
-    <input type="text" id="num2" placeholder="Nhập giá trị thứ hai"><br><br>
-    <button onclick="getData()">Hiển thị giá trị</button>
-    <button onclick="getResult()">Kết quả</button>
+    <input type="text" id="num2" placeholder="Nhập giá trị thứ hai"><br>
+    <p id="num11"></p>
+    <p id="num12"></p>
     <p id="result"></p>
-
+    <button onclick="getData()">Hiển thị giá trị</button>
+    <button onclick="getResult()">Kết quả</button>    
     <script>
         //Bài nâng cao 3: Trên HTML cho hai ô input để người dùng nhập và một ô button khi click vào thì hiển thị ra giá trị của hai ô đó
         //Tính tổng của giá trị của hai ô đó và hiển thị khi người dùng click vào nút.
-
+        
         function getData() {
             let num1 = document.getElementById("num1").value;
             let num2 = document.getElementById("num2").value;
-            //console.log(num1+num2);   
+            document.getElementById("num11").textContent="Giá trị thứ nhất: "+num1;
+            document.getElementById("num12").textContent="Giá trị thứ hai: "+num2;
             alert("Giá trị thứ nhất là: " + num1 + "\nGiá trị thứ hai là: " + num2);
             //document.write("Giá trị thứ nhất là: "+num1+"<br>Giá trị thứ hai là: "+num2);
             console.log("Giá trị thứ nhất là: " + num1 + "\nGiá trị thứ hai là: " + num2);
@@ -30,10 +32,10 @@
             let num1 = document.getElementById("num1").value;
             let num2 = document.getElementById("num2").value;
             let rlt = parseInt(num1) + parseInt(num2);
-            document.getElementById("result").innerHTML = rlt;
+            document.getElementById("result").innerHTML ="Tổng của 2 số vừa nhập là: " + rlt;
             alert("Tổng của 2 số vừa nhập là: " + rlt);
             console.log("Tổng của 2 số vừa nhập là: " + rlt);
-            document.write("Tổng của 2 số vừa nhập là: " + rlt);
+            //document.write("Tổng của 2 số vừa nhập là: " + rlt);
         }
     </script>
 </body>
