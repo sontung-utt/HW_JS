@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt1" placeholder="Nhập giá trị" onchange="getText(txt1)">
+    <p id="show"></p>
+    <script>
+        function getText(test) {
+            let tenbien = document.getElementById("show");
+            tenbien.innerHTML = "SHOW : " + test.value;
+            console.log("SHOW : " + test.value);
+
+            //document.getElementById("show").innerHTML = "SHOW : " + test.value;
+        }
+        /*setInterval(function () {
+			let input = document.getElementById("txt1");
+            let show = document.getElementById("show");
+            show.innerHTML = "SHOW : " + input.value;
+        }, 100);*/
+    </script>
+</body>
+</html>
